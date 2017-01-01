@@ -2,6 +2,9 @@ body {
   background: black;
   background-size: cover; }
 
+.main-header {
+  margin-bottom: 20px; }
+
 .main-header, .main-content, .main-footer {
   width: 100%; }
 
@@ -35,7 +38,7 @@ body {
 
 #footer {
   height: 100px;
-  background-color: green;
+  background-color: black;
   width: 100%; }
   #footer .icon-container, #footer .info-container {
     margin-top: 20px;
@@ -52,9 +55,19 @@ body {
     #footer i:hover {
       cursor: pointer; }
 
+.main-content-body #bound-video, .main-content-body #run-hide-video, .main-content-body #fly-video, .main-content-body #antipathy-video {
+  width: 100%;
+  max-height: 500px; }
+
 .main-content {
+  padding-top: 50px;
   min-height: 750px;
   background-color: gray; }
+  .main-content iframe {
+    height: 818px;
+    width: 340px;
+    padding: 10px 0;
+    margin: 0 -2px; }
 
 .navbar-brand-small {
   display: none;
@@ -64,6 +77,20 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #d5d5d5; }
+
+.album-info {
+  padding: 10px 10px; }
+  .album-info .album-image {
+    width: 100%; }
+  .album-info .album-info-text {
+    display: none; }
+
+@media (min-width: 753px) {
+  .main-content iframe {
+    width: 350px;
+    margin: 0 15px; }
+  .main-content #lofi-image, .main-content #self-titled-image {
+    height: 803px; } }
 
 @media (max-width: 914px) {
   .navbar-brand-small {

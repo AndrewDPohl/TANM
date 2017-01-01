@@ -3,6 +3,10 @@ body {
   background-size: cover;
 }
 
+.main-header {
+  margin-bottom: 20px;
+}
+
 .main-header, .main-content, .main-footer {
   width: 100%;
 }
@@ -47,7 +51,7 @@ body {
 
 #footer {
   height: 100px;
-  background-color: green;
+  background-color: black;
   width: 100%;
 
   .icon-container, .info-container {
@@ -75,9 +79,24 @@ body {
   }
 }
 
+.main-content-body {
+  #bound-video, #run-hide-video, #fly-video, #antipathy-video {
+    width: 100%;
+    max-height: 500px;
+  }
+}
+
 .main-content {
+  padding-top: 50px;
   min-height: 750px;
   background-color: gray;
+
+  iframe {
+    height: 818px;
+    width: 340px;
+    padding: 10px 0;
+    margin: 0 -2px;
+  }
 }
 
 .navbar-brand-small {
@@ -88,6 +107,35 @@ body {
     font-size: 18px;
     line-height: 20px;
     color: #d5d5d5;
+}
+
+.album-container {
+}
+
+.album-info {
+  padding: 10px 10px;
+  
+  .album-image {
+    width: 100%;
+  }
+
+  .album-info-text {
+    display: none;
+  }
+}
+
+@media (min-width: 753px) {
+  
+  .main-content {
+    iframe {
+      width: 350px;
+      margin: 0 15px;
+    }
+
+    #lofi-image, #self-titled-image {
+      height: 803px;
+    }
+  }
 }
 
 @media (max-width: 914px) {
