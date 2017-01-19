@@ -23,23 +23,17 @@ body {
   margin-top: 50px;
   min-height: 550px; }
 
-.band-container .image-container, .band-container .band-member-copy {
-  padding: 10px 10px; }
-
 .band-container .image-container {
-  float: left; }
+  padding-bottom: 10px; }
 
-.band-container .band-member-copy {
-  border: 2px solid white; }
-
-.band-container img {
-  max-height: 350px;
-  max-width: 350px; }
+.band-container .band-image {
+  width: 100%; }
 
 #footer {
   height: 100px;
-  background-color: black;
-  width: 100%; }
+  background-color: white;
+  width: 100%;
+  position: absolute; }
   #footer .icon-container, #footer .info-container {
     margin-top: 20px;
     background-color: white; }
@@ -61,8 +55,7 @@ body {
 
 .main-content {
   padding-top: 50px;
-  min-height: 750px;
-  background-color: gray; }
+  min-height: 750px; }
   .main-content iframe {
     height: 818px;
     width: 340px;

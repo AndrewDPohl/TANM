@@ -30,29 +30,20 @@ body {
 }
 
 .band-container {
-
-  .image-container, .band-member-copy {
-    padding: 10px 10px;
-  }
-
   .image-container {
-    float: left;
+    padding-bottom: 10px;
   }
 
-  .band-member-copy {
-    border: 2px solid white;
-  }
-
-  img {
-    max-height: 350px;
-    max-width: 350px;
+  .band-image {
+    width: 100%;
   }
 }
 
 #footer {
   height: 100px;
-  background-color: black;
+  background-color: white;
   width: 100%;
+  position: absolute;
 
   .icon-container, .info-container {
     margin-top: 20px;
@@ -89,7 +80,6 @@ body {
 .main-content {
   padding-top: 50px;
   min-height: 750px;
-  background-color: gray;
 
   iframe {
     height: 818px;
@@ -107,9 +97,6 @@ body {
     font-size: 18px;
     line-height: 20px;
     color: #d5d5d5;
-}
-
-.album-container {
 }
 
 .album-info {
