@@ -81,11 +81,8 @@ body {
   padding-top: 50px;
   min-height: 750px;
 
-  iframe {
-    height: 818px;
-    width: 340px;
-    padding: 10px 0;
-    margin: 0 -2px;
+  .aimless-video {
+    margin-bottom: 10px;
   }
 }
 
@@ -109,6 +106,16 @@ body {
   .album-info-text {
     display: none;
   }
+}
+
+/* FLYERS PAGE */
+
+.flyer {
+  height: 500px;
+}
+
+.flyer img {
+  width: 100%;
 }
 
 @media (min-width: 753px) {
