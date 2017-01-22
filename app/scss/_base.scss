@@ -84,6 +84,14 @@ body {
   .aimless-video {
     margin-bottom: 10px;
   }
+
+  .band-logo, .band-photo {
+    width: 100%;
+  }
+
+  .about-photo {
+    text-align: center;
+  }
 }
 
 .navbar-brand-small {
@@ -106,6 +114,10 @@ body {
   .album-info-text {
     display: none;
   }
+}
+
+.album-container {
+  padding: 10px 10px;
 }
 
 /* FLYERS PAGE */
