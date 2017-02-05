@@ -6,7 +6,3 @@ $(".album-info").hover(function () {
 }, function() {
   $('.album-info-text').hide();
 });
-
-$(".album-image").click(function() {
-  $(this).fadeOut(2000);
-})
