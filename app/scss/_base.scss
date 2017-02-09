@@ -80,6 +80,7 @@ body {
 .main-content {
   padding-top: 50px;
   min-height: 750px;
+  margin-bottom: 40px;
 
   .aimless-video {
     margin-bottom: 10px;
@@ -106,6 +107,7 @@ body {
 
 .album-info {
   padding: 10px 10px;
+  perspective: 1000px;
   
   .album-image {
     width: 100%;
@@ -113,6 +115,43 @@ body {
 
   .album-info-text {
     display: none;
+  }
+
+  &:hover .album-flipper, .hover .album-flipper {
+    transform: rotateY(180deg);
+  }
+
+  .album-flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .front, .back {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+    color: #fff;
+  }
+
+  .back p {
+    margin-top: 50px;
   }
 }
 
@@ -135,10 +174,12 @@ body {
 /* FLYERS PAGE */
 
 .flyer {
-  height: 700px;
+  height: 500px;
+  margin-bottom: 10px; 
 }
 
 .flyer img {
+  height: 100%;
   width: 100%;
 }
 
@@ -153,6 +194,13 @@ body {
     #lofi-image, #self-titled-image {
       height: 803px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .album-info {
+    height: 350px;
+    overflow: scroll;
   }
 }
 

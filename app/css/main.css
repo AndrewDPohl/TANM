@@ -55,7 +55,8 @@ body {
 
 .main-content {
   padding-top: 50px;
-  min-height: 750px; }
+  min-height: 750px;
+  margin-bottom: 40px; }
   .main-content .aimless-video {
     margin-bottom: 10px; }
   .main-content .band-logo, .main-content .band-photo {
@@ -73,11 +74,37 @@ body {
   color: #d5d5d5; }
 
 .album-info {
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  perspective: 1000px;
+  /* front pane, placed above back */
+  /* back, initially hidden pane */ }
   .album-info .album-image {
     width: 100%; }
   .album-info .album-info-text {
     display: none; }
+  .album-info:hover .album-flipper, .album-info .hover .album-flipper {
+    transform: rotateY(180deg); }
+  .album-info .album-flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative; }
+  .album-info .front, .album-info .back {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .album-info .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg); }
+  .album-info .back {
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+    color: #fff; }
+  .album-info .back p {
+    margin-top: 50px; }
 
 .album-container {
   padding: 10px 10px; }
@@ -92,9 +119,11 @@ body {
 
 /* FLYERS PAGE */
 .flyer {
-  height: 700px; }
+  height: 500px;
+  margin-bottom: 10px; }
 
 .flyer img {
+  height: 100%;
   width: 100%; }
 
 @media (min-width: 753px) {
@@ -103,6 +132,11 @@ body {
     margin: 0 15px; }
   .main-content #lofi-image, .main-content #self-titled-image {
     height: 803px; } }
+
+@media (max-width: 767px) {
+  .album-info {
+    height: 350px;
+    overflow: scroll; } }
 
 @media (max-width: 914px) {
   .navbar-brand-small {
