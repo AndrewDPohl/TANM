@@ -105,6 +105,9 @@ body {
     color: #fff; }
   .album-info .back p {
     margin-top: 50px; }
+  .album-info .back img {
+    height: 300px;
+    width: 300px; }
 
 .album-container {
   padding: 10px 10px; }
@@ -129,9 +132,7 @@ body {
 @media (min-width: 753px) {
   .main-content iframe {
     width: 350px;
-    margin: 0 15px; }
-  .main-content #lofi-image, .main-content #self-titled-image {
-    height: 803px; } }
+    margin: 0 15px; } }
 
 @media (max-width: 767px) {
   .album-info {

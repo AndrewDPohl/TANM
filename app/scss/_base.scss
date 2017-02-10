@@ -153,6 +153,11 @@ body {
   .back p {
     margin-top: 50px;
   }
+
+  .back img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .album-container {
@@ -189,10 +194,6 @@ body {
     iframe {
       width: 350px;
       margin: 0 15px;
-    }
-
-    #lofi-image, #self-titled-image {
-      height: 803px;
     }
   }
 }
