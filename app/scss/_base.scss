@@ -11,6 +11,25 @@ body {
   width: 100%;
 }
 
+//about page
+.about-photo {
+  width: 100%;
+
+  .about-page-photo {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.about-copy {
+  color: #fff;
+  text-align: center;
+
+  p {
+    font-size: 25px;
+  }
+}
+
 
 .banner {
   background-image: url('http://i.imgur.com/3lyk3mO.jpg');
@@ -40,23 +59,15 @@ body {
 }
 
 #footer {
-  height: 100px;
   background-color: white;
   width: 100%;
   position: absolute;
+  padding-bottom: 15px;
 
   .icon-container, .info-container {
+    text-align: center;
     margin-top: 20px;
     background-color: white;
-  }
-
-  .icon-container {
-    padding-top: 14px;
-    text-align: left;
-  }
-
-  .info-container {
-    text-align: right;
   }
 
   i {
@@ -67,6 +78,10 @@ body {
     &:hover {
       cursor: pointer;
     }
+  }
+
+  p {
+    font-size: 20px;
   }
 }
 

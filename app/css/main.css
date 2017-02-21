@@ -8,6 +8,18 @@ body {
 .main-header, .main-content, .main-footer {
   width: 100%; }
 
+.about-photo {
+  width: 100%; }
+  .about-photo .about-page-photo {
+    max-width: 600px;
+    margin: 0 auto; }
+
+.about-copy {
+  color: #fff;
+  text-align: center; }
+  .about-copy p {
+    font-size: 25px; }
+
 .banner {
   background-image: url("http://i.imgur.com/3lyk3mO.jpg");
   background-position: center center;
@@ -30,24 +42,22 @@ body {
   width: 100%; }
 
 #footer {
-  height: 100px;
   background-color: white;
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  padding-bottom: 15px; }
   #footer .icon-container, #footer .info-container {
+    text-align: center;
     margin-top: 20px;
     background-color: white; }
-  #footer .icon-container {
-    padding-top: 14px;
-    text-align: left; }
-  #footer .info-container {
-    text-align: right; }
   #footer i {
     color: black;
     display: inline-block;
     margin-right: 20px; }
     #footer i:hover {
       cursor: pointer; }
+  #footer p {
+    font-size: 20px; }
 
 .main-content-body #bound-video, .main-content-body #run-hide-video, .main-content-body #fly-video, .main-content-body #antipathy-video {
   width: 100%;

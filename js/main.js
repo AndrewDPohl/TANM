@@ -6,3 +6,7 @@ $(".album-info").hover(function () {
 }, function() {
   $('.album-info-text').hide();
 });
+
+$(document).ready(function () {
+    $('.about-page-photo').fadeIn(3000);
+});
