@@ -28,6 +28,12 @@ gulp.task('home', function() {
         .pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('audio', function() {
+    return gulp.src('./app/*.mp3')
+        .pipe(gulp.dest('./audio'))
+        .pipe(browserSync.reload({stream: true}));
+});
+
 gulp.task('serve', function () {
     browserSync.init({
         server: {
@@ -40,4 +46,4 @@ gulp.task('serve', function () {
     gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['styles', 'style', 'js', 'home', 'serve']);
+gulp.task('default', ['styles', 'style', 'js', 'home', 'audio', 'serve']);

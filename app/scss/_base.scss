@@ -3,8 +3,58 @@ body {
   background-size: cover;
 }
 
+.add-highlight {
+  -moz-transition: box-shadow 18000ms; /* Firefox 4 */
+  -o-transition: box-shadow 18000ms; /* Opera     */
+  -webkit-transition: box-shadow 18000ms; /* Chrome    */
+  transition: box-shadow 18000ms;
+
+  box-shadow: 
+    0 1em 3em white;
+}
+
+.add-hover-highlight {
+  -moz-transition: box-shadow 1500ms; /* Firefox 4 */
+  -o-transition: box-shadow 1500ms; /* Opera     */
+  -webkit-transition: box-shadow 1500ms; /* Chrome    */
+  transition: box-shadow 1500ms;
+
+  box-shadow: 
+    0 1em 3em white;
+}
+
+#header {
+  margin-bottom: 150px;
+  background-color: black;
+
+  a:hover {
+    color: orange;
+  }
+}
+
+nav.navbar{
+   // Animation
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
 .main-header {
   margin-bottom: 20px;
+  background-color: black !important;
+
+  .navbar-header {
+    height: 150px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .navbar-nav {
+    margin-top: 100px;
+  }
 }
 
 .main-header, .main-content, .main-footer {
@@ -14,10 +64,12 @@ body {
 //about page
 .about-photo {
   width: 100%;
+  text-align: center;
 
   .about-page-photo {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    box-shadow: 0 0 1em white;
   }
 }
 
@@ -30,9 +82,14 @@ body {
   }
 }
 
+#disqus_thread {
+  margin-top: 45px;
+  box-shadow: 0 0 1em white;
+}
+
 
 .banner {
-  background-image: url('http://i.imgur.com/3lyk3mO.jpg');
+  background-image: url('http://i.imgur.com/nExxSfY.jpg');
   background-position:  center center;
   background-size: cover;
   position: absolute;
@@ -41,6 +98,14 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.banner-name {
+  max-width: 500px;
+  z-index: 1001;
+  position: absolute;
+  top: 25%;
+  left: 15%;
 }
 
 .social-container {
@@ -55,33 +120,7 @@ body {
 
   .band-image {
     width: 100%;
-  }
-}
-
-#footer {
-  background-color: white;
-  width: 100%;
-  position: absolute;
-  padding-bottom: 15px;
-
-  .icon-container, .info-container {
-    text-align: center;
-    margin-top: 20px;
-    background-color: white;
-  }
-
-  i {
-    color: black;
-    display: inline-block;
-    margin-right: 20px;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  p {
-    font-size: 20px;
+    box-shadow: 0 0 1em white;
   }
 }
 
@@ -93,7 +132,7 @@ body {
 }
 
 .main-content {
-  padding-top: 50px;
+  //padding-top: 50px;
   min-height: 750px;
   margin-bottom: 40px;
 
@@ -104,20 +143,6 @@ body {
   .band-logo, .band-photo {
     width: 100%;
   }
-
-  .about-photo {
-    text-align: center;
-  }
-}
-
-.navbar-brand-small {
-    display: none;
-    float: left;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
-    color: #d5d5d5;
 }
 
 .album-info {
@@ -132,10 +157,6 @@ body {
     display: none;
   }
 
-  &:hover .album-flipper, .hover .album-flipper {
-    transform: rotateY(180deg);
-  }
-
   .album-flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
@@ -148,18 +169,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 0 0 1em white;
   }
 
-  /* front pane, placed above back */
   .front {
-    z-index: 2;
-    /* for firefox 31 */
-    transform: rotateY(0deg);
+    span {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
   }
 
-  /* back, initially hidden pane */
   .back {
-    transform: rotateY(180deg);
     top: 0;
     left: 0;
     color: #fff;
@@ -173,17 +194,25 @@ body {
     height: 300px;
     width: 300px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .album-container {
   padding: 10px 10px;
+
+  iframe {
+    box-shadow: 0 0 1em white;
+  }
 }
 
 .band-member {
   h4 {
     text-align: center;
-    font-size: 20px;
-    color: purple;
+    font-size: 18px;
+    color: orange;
   }
 
   p, small {
@@ -195,7 +224,7 @@ body {
 
 .flyer {
   height: 500px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   h2 {
     text-align: center;
@@ -206,6 +235,12 @@ body {
 .flyer img {
   height: 100%;
   width: 100%;
+  box-shadow: 0 0 1em white;
+}
+
+/* VIDEOS PAGE */
+.aimless-video {
+  box-shadow: 0 0 1em white;
 }
 
 @media (min-width: 753px) {
@@ -223,15 +258,24 @@ body {
     height: 350px;
     overflow: scroll;
   }
+
+  .navbar-nav {
+    margin-top: 0 !important;
+  }
+
+  .navbar-toggle {
+    margin-top: 50px;
+  }
 }
 
-@media (max-width: 914px) {
-    .navbar-brand-small {
-        display: block;
+@media (max-width: 767px) {
+    
+    .navbar-header {
+      height: 50px;
     }
 
-    .navbar-brand {
-        display: none;
+    .navbar-brand img{
+      max-height: 100px;
     }
 
 }
@@ -243,5 +287,9 @@ body {
     width: 100%;
     height: 500px;
     background-size: contain;
+  }
+
+  .banner-name {
+    display: none;
   }
 }
