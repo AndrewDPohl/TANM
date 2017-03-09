@@ -2,26 +2,6 @@ body {
   background: black;
   background-size: cover; }
 
-.add-highlight {
-  -moz-transition: box-shadow 18000ms;
-  /* Firefox 4 */
-  -o-transition: box-shadow 18000ms;
-  /* Opera     */
-  -webkit-transition: box-shadow 18000ms;
-  /* Chrome    */
-  transition: box-shadow 18000ms;
-  box-shadow: 0 1em 3em white; }
-
-.add-hover-highlight {
-  -moz-transition: box-shadow 1500ms;
-  /* Firefox 4 */
-  -o-transition: box-shadow 1500ms;
-  /* Opera     */
-  -webkit-transition: box-shadow 1500ms;
-  /* Chrome    */
-  transition: box-shadow 1500ms;
-  box-shadow: 0 1em 3em white; }
-
 #header {
   margin-bottom: 150px;
   background-color: black; }

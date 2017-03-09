@@ -5,8 +5,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.banner-name').fadeIn(12000);
-  $('.banner-name').addClass('add-highlight');
+  $('.banner-name').fadeIn(20000);
 });
 
 
