@@ -97,7 +97,8 @@ nav.navbar.shrink {
   .album-info .album-flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
-    position: relative; }
+    position: relative;
+    text-align: center; }
   .album-info .front, .album-info .back {
     width: 100%;
     backface-visibility: hidden;
@@ -116,8 +117,8 @@ nav.navbar.shrink {
   .album-info .back p {
     margin-top: 50px; }
   .album-info .back img {
-    height: 300px;
-    width: 300px; }
+    max-height: 400px;
+    max-width: 400px; }
   .album-info:hover {
     cursor: pointer; }
 
