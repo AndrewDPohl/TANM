@@ -3,8 +3,8 @@ body {
   background-size: cover; }
 
 #header {
-  margin-bottom: 150px;
-  background-color: black; }
+  margin-bottom: 185px;
+  background-color: white; }
   #header a:hover {
     color: orange; }
 
@@ -12,18 +12,68 @@ nav.navbar {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
-nav.navbar.shrink {
-  min-height: 35px; }
-
 .main-header {
-  margin-bottom: 20px;
-  background-color: black !important; }
+  background-color: white !important; }
   .main-header .navbar-header {
-    height: 150px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease; }
   .main-header .navbar-nav {
-    margin-top: 100px; }
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block; }
+    .main-header .navbar-nav .nav-menu-item {
+      float: left; }
+  .main-header .navbar-brand {
+    padding: 0 15px; }
+  .main-header .navbar-brand img {
+    height: 150px;
+    width: 100%; }
+  .main-header nav li a {
+    padding: 10px 10px; }
+  .main-header ul {
+    margin: 0 auto; }
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #cc5350;
+  color: #fff;
+  z-index: 1000;
+  height: 150px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align: center;
+  line-height: 160px; }
+
+.main-header.shrink {
+  height: 50px;
+  line-height: 80px; }
+  .main-header.shrink .navbar-brand img {
+    margin-top: -30px; }
+
+.main-header h1 {
+  font-size: 30px;
+  font-weight: normal;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.main-header.shrink h1 {
+  font-size: 24px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.main-header.shrink ul {
+  display: none; }
+
+.content {
+  height: 2000px;
+  /*just to get the page to scroll*/ }
 
 .main-header, .main-content, .main-footer {
   width: 100%; }
@@ -170,7 +220,11 @@ nav.navbar.shrink {
   .navbar-header {
     height: 50px; }
   .navbar-brand img {
-    max-height: 100px; } }
+    max-height: 100px; }
+  .navbar-nav {
+    float: left; }
+    .navbar-nav li {
+      font-size: 12px; } }
 
 @media (max-width: 950px) {
   .banner {

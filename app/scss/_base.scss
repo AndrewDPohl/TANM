@@ -4,8 +4,8 @@ body {
 }
 
 #header {
-  margin-bottom: 150px;
-  background-color: black;
+  margin-bottom: 185px;
+  background-color: white;
 
   a:hover {
     color: orange;
@@ -18,23 +18,91 @@ nav.navbar{
    transition: all 0.4s ease;
 }
 
-nav.navbar.shrink {
-  min-height: 35px;
-}
-
 .main-header {
-  margin-bottom: 20px;
-  background-color: black !important;
+  //margin-bottom: 20px;
+  background-color: white !important;
 
   .navbar-header {
-    height: 150px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
 
   .navbar-nav {
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block;
+
+    .nav-menu-item {
+      float: left;
+    }
   }
+
+  .navbar-brand {
+    padding: 0 15px;
+  }
+
+  .navbar-brand img {
+    height: 150px;
+    width: 100%;
+  }
+
+  nav li a {
+    padding: 10px 10px;
+  }
+
+  ul {
+    margin: 0 auto;
+  }
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #cc5350;
+  color:#fff;
+  z-index: 1000;
+  height: 150px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align:center;
+  line-height:160px;
+}
+
+.main-header.shrink {
+    height: 50px;
+    line-height:80px;
+
+    .navbar-brand img {
+      margin-top: -30px;
+    }
+}
+
+.main-header h1 {
+  font-size:30px;
+  font-weight:normal;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-header.shrink h1 {
+  font-size:24px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-header.shrink ul {
+  display: none;
+}
+
+.content {
+  height:2000px;
+  /*just to get the page to scroll*/
 }
 
 .main-header, .main-content, .main-footer {
@@ -257,6 +325,14 @@ nav.navbar.shrink {
 
     .navbar-brand img{
       max-height: 100px;
+    }
+
+    .navbar-nav {
+      float: left;
+
+      li {
+        font-size: 12px;
+      }
     }
 
 }
