@@ -3,7 +3,7 @@ body {
   background-size: cover; }
 
 #header {
-  margin-bottom: 185px;
+  margin-bottom: 150px;
   background-color: white; }
   #header a:hover {
     color: orange; }
@@ -20,7 +20,7 @@ nav.navbar {
   .main-header .navbar-nav {
     width: 100%;
     margin-top: 50px;
-    display: inline-block; }
+    display: flex; }
     .main-header .navbar-nav .nav-menu-item {
       float: left; }
   .main-header .navbar-brand {
@@ -29,9 +29,13 @@ nav.navbar {
     height: 150px;
     width: 100%; }
   .main-header nav li a {
-    padding: 10px 10px; }
+    padding: 10px 10px;
+    color: red !important;
+    font-weight: bold; }
   .main-header ul {
     margin: 0 auto; }
+  .main-header ul li {
+    flex-grow: 1; }
 
 .main-header {
   position: fixed;
@@ -41,7 +45,6 @@ nav.navbar {
   background: #cc5350;
   color: #fff;
   z-index: 1000;
-  height: 150px;
   overflow: hidden;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
@@ -53,7 +56,11 @@ nav.navbar {
   height: 50px;
   line-height: 80px; }
   .main-header.shrink .navbar-brand img {
-    margin-top: -30px; }
+    margin-top: -30px;
+    width: 500px;
+    float: left; }
+  .main-header.shrink .navbar-nav {
+    margin-top: -10px; }
 
 .main-header h1 {
   font-size: 30px;
@@ -67,9 +74,6 @@ nav.navbar {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
-
-.main-header.shrink ul {
-  display: none; }
 
 .content {
   height: 2000px;
@@ -221,10 +225,12 @@ nav.navbar {
     height: 50px; }
   .navbar-brand img {
     max-height: 100px; }
+  .nav-title {
+    padding: 0 0; }
   .navbar-nav {
     float: left; }
     .navbar-nav li {
-      font-size: 12px; } }
+      font-size: 10px; } }
 
 @media (max-width: 950px) {
   .banner {
@@ -234,4 +240,12 @@ nav.navbar {
     height: 500px;
     background-size: contain; }
   .banner-name {
-    display: none; } }
+    display: none; }
+  .main-header ul li {
+    padding: 5px 0; }
+  .main-header .navbar-brand img {
+    height: 100px; }
+  .main-header .navbar-default .navbar-nav > .open > a {
+    background-color: transparent; }
+  .main-header .navbar-default .navbar-nav > .open > ul {
+    background-color: white; } }
