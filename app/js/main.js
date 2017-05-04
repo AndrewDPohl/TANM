@@ -5,7 +5,10 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.banner-name').fadeIn(20000);
+  var width = window.innerWidth;
+  if (width >= 950) {
+    $('.banner-name').fadeIn(20000);
+  }
 });
 
 

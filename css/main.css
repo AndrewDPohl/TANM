@@ -12,30 +12,40 @@ nav.navbar {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
-.main-header {
-  background-color: white !important; }
-  .main-header .navbar-header {
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
-  .main-header .navbar-nav {
-    width: 100%;
-    margin-top: 50px;
-    display: flex; }
-    .main-header .navbar-nav .nav-menu-item {
-      float: left; }
-  .main-header .navbar-brand {
-    padding: 0 15px; }
-  .main-header .navbar-brand img {
-    height: 150px;
-    width: 100%; }
-  .main-header nav li a {
-    padding: 10px 10px;
-    color: red !important;
-    font-weight: bold; }
-  .main-header ul {
-    margin: 0 auto; }
-  .main-header ul li {
-    flex-grow: 1; }
+.main-header .navbar {
+  background-image: url("../TANM-sky.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  border: none; }
+
+.main-header .navbar-header {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.main-header .navbar-nav {
+  width: 100%;
+  margin-top: 50px;
+  display: flex; }
+  .main-header .navbar-nav .nav-menu-item {
+    float: left; }
+
+.main-header .navbar-brand {
+  padding: 0 15px; }
+
+.main-header .navbar-brand img {
+  height: 150px;
+  width: 100%; }
+
+.main-header nav li a {
+  padding: 10px 10px;
+  color: red !important;
+  font-weight: bold; }
+
+.main-header ul {
+  margin: 0 auto; }
+
+.main-header ul li {
+  flex-grow: 1; }
 
 .main-header {
   position: fixed;
