@@ -33,12 +33,14 @@ $(function(){
     if ( scroll >= shrinkHeader ) {
       $('.main-header').addClass('shrink');
       $('nav').css("height", "75px");
-      $('.main-header .navbar-nav').css("margin-top", "0");
+      $('.main-header .navbar-nav').css("margin-top", "35px");
+      $('.nav-menu-item').css("background-color", "black");
       $('.nav-title').css("margin-top", "-10px");
     } else {
       $('.main-header').removeClass('shrink');
       $('nav').css("height", "140px");
       $('.main-header .navbar-nav').css("margin-top", "50px");
+      $('.nav-menu-item').css("background-color", "");
       $('.nav-title').css("margin-top", "0");
     }
   });
@@ -56,7 +58,7 @@ function update(){
         var $element = $(this);
         // subtract some from the height b/c of the padding
         var height = $element.height()-18;
-        $(this).css('backgroundPosition', '50% ' + Math.round(pos * velocity) + 'px'); 
+        $(this).css('backgroundPosition', '50% ' + Math.round(-pos * velocity) + 'px'); 
     }); 
 };
 
