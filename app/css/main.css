@@ -104,6 +104,11 @@ nav.navbar {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 1em white; }
+  .about-photo .about-page-photo-1 {
+    max-width: 400px;
+    margin: 0 auto; }
+    .about-photo .about-page-photo-1 img {
+      box-shadow: 0 0 1em white; }
 
 .about-copy {
   color: #fff;

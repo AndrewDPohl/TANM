@@ -139,6 +139,16 @@ nav.navbar{
     margin: 0 auto;
     box-shadow: 0 0 1em white;
   }
+
+  .about-page-photo-1 {
+    max-width: 400px;
+    margin: 0 auto;
+
+    img {
+      box-shadow: 0 0 1em white;
+    }
+
+  }
 }
 
 .about-copy {
