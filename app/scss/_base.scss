@@ -6,119 +6,89 @@ body {
 #header {
   margin-bottom: 150px;
   background-color: white;
-
-  a:hover {
-    color: orange;
-  }
-}
-
-nav.navbar{
-   // Animation
-   -webkit-transition: all 0.4s ease;
-   -webkit-transition 
-   : all 0.4s ease;
-   transition: all 0.4s ease;
 }
 
 .main-header {
-  
-  .navbar {
-    background-image: url('../TANM-Sky.jpg'); 
-    //background-image: linear-gradient(red, black); /* W3C */
-    background-size: cover; 
-    background-repeat: repeat-y; 
-    border: none;
-  }
+  margin-bottom: 20px;
+}
+
+nav {
+  background-image: url('../TANM-Sky.jpg');
 
   .navbar-header {
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
+    padding: 10px;
 
-  .navbar-nav {
-    width: 100%;
-    margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    .nav-menu-item {
+    button {
+      background: black;
+      border: 1px solid white;
       float: left;
     }
-  }
 
-  .navbar-brand {
-    padding: 0 15px;
-  }
-
-  .navbar-brand img {
-    height: 150px;
-    width: 100%;
-  }
-
-  nav li a {
-    padding: 10px 10px;
-    color: red !important;
-    font-weight: bold; 
-  }
-
-  ul {
-    margin: 0 auto;
-  }
-
-  ul li {
-    //width: 90px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-.main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #cc5350;
-  color:#fff;
-  z-index: 1000;
-  overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s;
-  text-align:center;
-  line-height:160px;
-}
-
-.main-header.shrink {
-    height: 50px;
-    line-height:80px;
+    .icon-bar {
+      background: white;
+    }
 
     .navbar-brand img {
-      margin-top: -30px;
-      width: 500px;
-      float: left;
+      width: 100%;
+      margin-top: -50px;
+      margin-left: 10px !important;
+      height: 200px;
+    }
+  }
+
+  .main-nav {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background: transparent;
+  }
+
+  .nav-menu-item a {
+    color: white;
+
+    &:hover {
+      background: transparent;
     }
 
-    .navbar-nav {
-      margin-top: -10px;
+    &:focus {
+      background: transparent !important;
     }
+  }
+
+  .dropdown-menu {
+    background: black;
+  }
+
+  .dropdown-menu>li>a {
+    &:hover {
+      background: red;
+      color: white;
+    }
+  }
 }
 
-.main-header h1 {
-  font-size:30px;
-  font-weight:normal;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+@media (max-width: 736px) {
+  .navbar-brand img {
+    height: 100px !important;
+    margin: -85px auto 0 0 !important;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+
+    li>a {
+      color: red;
+    }
+  }
 }
 
-.main-header.shrink h1 {
-  font-size:24px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
 .content {
   height: 2000px;
@@ -345,39 +315,9 @@ nav.navbar{
     height: 350px;
     overflow: scroll;
   }
-
-  .navbar-nav {
-    margin-top: 0 !important;
-  }
-
-  .navbar-toggle {
-    margin-top: 50px;
-  }
 }
 
-@media (max-width: 767px) {
-    
-    .navbar-header {
-      height: 50px;
-    }
 
-    .navbar-brand img{
-      max-height: 100px;
-    }
-
-    .nav-title {
-      padding: 0 0;
-    }
-
-    .navbar-nav {
-      float: left;
-
-      li {
-        font-size: 10px;
-      }
-    }
-
-}
 
 @media (max-width: 950px) {
   .banner {
@@ -390,23 +330,5 @@ nav.navbar{
 
   .banner-name {
     display: none;
-  }
-
-  .main-header {
-    ul li {
-      padding: 5px 0;
-    }
-
-    .navbar-brand img {
-      height: 100px;
-    }
-
-    .navbar-default .navbar-nav>.open>a {
-      background-color: transparent;
-    }
-
-    .navbar-default .navbar-nav>.open>ul {
-      background-color: white;
-    }
   }
 }
