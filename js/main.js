@@ -25,3 +25,18 @@ $('.album-flipper').click(function () {
   $(".back").toggleClass('hide');
   $(".back").toggleClass('show');
 });
+
+// Y axis scroll speed
+var velocity = 0.2;
+
+function update(){ 
+    var pos = $(window).scrollTop(); 
+    $('.navbar').each(function() { 
+        var $element = $(this);
+        // subtract some from the height b/c of the padding
+        var height = $element.height()-18;
+        $(this).css('backgroundPosition', '50% ' + Math.round(-pos * velocity) + 'px'); 
+    }); 
+};
+
+$(window).bind('scroll', update);
