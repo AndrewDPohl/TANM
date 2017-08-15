@@ -35,7 +35,7 @@ function update(){
         var $element = $(this);
         // subtract some from the height b/c of the padding
         var height = $element.height()-18;
-        $(this).css('backgroundPosition', '50% ' + Math.round(-pos * velocity) + 'px'); 
+        $(this).css('backgroundPosition', '0% ' + Math.round(-pos * velocity) + 'px'); 
     }); 
 };
 

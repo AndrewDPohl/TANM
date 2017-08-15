@@ -66,6 +66,11 @@ nav {
       color: white;
     }
   }
+
+  .coming-soon {
+    color: red;
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 736px) {
@@ -131,7 +136,7 @@ nav {
 }
 
 #disqus_thread {
-  margin-top: 45px;
+  margin-top: 155px;
   box-shadow: 0 0 1em white;
 }
 

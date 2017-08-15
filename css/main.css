@@ -41,6 +41,9 @@ nav {
   nav .dropdown-menu > li > a:hover {
     background: red;
     color: white; }
+  nav .coming-soon {
+    color: red;
+    padding-left: 20px; }
 
 @media (max-width: 736px) {
   .navbar-brand img {
@@ -82,7 +85,7 @@ nav {
     font-size: 20px; }
 
 #disqus_thread {
-  margin-top: 45px;
+  margin-top: 155px;
   box-shadow: 0 0 1em white; }
 
 .banner {
